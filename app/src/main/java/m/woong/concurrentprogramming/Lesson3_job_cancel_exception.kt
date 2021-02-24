@@ -2,6 +2,7 @@ package m.woong.concurrentprogramming
 
 import kotlinx.coroutines.*
 
+/*
 @InternalCoroutinesApi
 fun main(args: Array<String>) = runBlocking {
     val exceptionHandler = CoroutineExceptionHandler { _, throwable ->
@@ -19,4 +20,4 @@ fun main(args: Array<String>) = runBlocking {
         }
     }
     delay(2000)
-}
+}*/
