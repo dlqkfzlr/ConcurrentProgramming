@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         GlobalScope.launch(dispatcher) {
-            printCurrentThread()
+//            printCurrentThread()
         }
         GlobalScope.launch(dispatcher) {
             val headlines = fetchRssHeadlines()
