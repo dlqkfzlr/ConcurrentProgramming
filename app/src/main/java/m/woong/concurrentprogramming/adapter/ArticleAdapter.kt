@@ -14,8 +14,6 @@ import m.woong.concurrentprogramming.model.Article
 
 class ArticleAdapter : ListAdapter<Article, ArticleAdapter.ViewHolder>(DIFF_UTIL) {
 
-    private val articles: MutableList<Article> = mutableListOf()
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArticleAdapter.ViewHolder {
         val binding = DataBindingUtil.inflate<ArticleBinding>(
             LayoutInflater.from(parent.context),
@@ -27,10 +25,8 @@ class ArticleAdapter : ListAdapter<Article, ArticleAdapter.ViewHolder>(DIFF_UTIL
     }
 
     override fun onBindViewHolder(holder: ArticleAdapter.ViewHolder, position: Int) {
-        holder.onBind(articles[position])
+        holder.onBind(getItem(position))
     }
-
-    override fun getItemCount() = articles.size
 
     class ViewHolder(
         private val binding: ArticleBinding
