@@ -18,18 +18,21 @@
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:text="@{article.title}"/>
 
         <TextView
             android:id="@+id/feed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp" />
+            android:textSize="12sp"
+            android:text="@{article.feed}"/>
 
         <TextView
             android:id="@+id/summary"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@{article.summary}"/>
 
     </LinearLayout>
 </layout>
